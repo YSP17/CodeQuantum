@@ -4,21 +4,20 @@ import { CodeBlock } from "./CodeBlock";
 import { AnimateOnScroll } from "./AnimateOnScroll";
 
 export function AboutSection() {
+  // Simplified code snippet that's shorter but still visually appealing
   const aboutCode = `// About me
 const aboutMe = {
-  background: "Computer Science graduate with 5+ years of experience",
-  approach: "Problem solver with a passion for clean, efficient code",
-  interests: [
-    "Web Development", 
-    "UI/UX Design", 
-    "Cloud Architecture", 
-    "Open Source"
+  name: "Yeshwant",
+  role: "Data Scientist",
+  education: "MS in Data Science",
+  skills: [
+    "Machine Learning", 
+    "Data Analysis",
+    "Cloud Computing",
+    "Statistical Modeling"
   ],
-  currentlyLearning: "Advanced TypeScript patterns & WebGL",
-  goal: "Building software that makes a difference"
-};
-
-export default aboutMe;`;
+  interests: "Turning data into insights"
+};`;
 
   return (
     <section id="about" className="py-20 relative">
@@ -32,19 +31,19 @@ export default aboutMe;`;
           <AnimateOnScroll className="space-y-6" animation="fade-in">
             <h3 className="text-2xl font-semibold text-white">Who I Am</h3>
             <p className="text-gray-300">
-              I'm a passionate software developer specializing in building exceptional digital experiences. With a strong foundation in full-stack development, I enjoy creating elegant solutions that prioritize user experience.
+              I'm a passionate data scientist specializing in turning complex data into actionable insights. With a strong foundation in machine learning and statistical analysis, I enjoy creating elegant solutions that drive business decisions.
             </p>
             <p className="text-gray-300">
-              My journey in tech began with a Computer Science degree, followed by professional experience across various domains including web applications, mobile development, and cloud infrastructure.
+              My journey began with a Bachelor's in Electronics and Computer Engineering, followed by a Master's in Data Science at Rochester Institute of Technology.
             </p>
             <p className="text-gray-300">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community.
+              As a fresher in the field, I'm enthusiastic about applying my knowledge to real-world problems and continuously expanding my expertise in data science methodologies.
             </p>
             
             <div className="pt-4">
               <h3 className="text-xl font-semibold text-white mb-3">Technologies I Work With</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {["JavaScript", "TypeScript", "React", "Node.js", "HTML/CSS", "Git"].map((tech, index) => (
+                {["Python", "R", "SQL", "AWS", "Tableau", "TensorFlow"].map((tech, index) => (
                   <AnimateOnScroll key={tech} delay={index * 100}>
                     <div className="glassmorphism rounded-md py-2 px-4 text-center text-gray-300">
                       {tech}
@@ -56,7 +55,7 @@ export default aboutMe;`;
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="scale-in" delay={200}>
-            <CodeBlock code={aboutCode} animate={true} speed={20} />
+            <CodeBlock code={aboutCode} animate={true} speed={30} />
           </AnimateOnScroll>
         </div>
       </div>
