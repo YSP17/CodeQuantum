@@ -10,13 +10,13 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <a href="#hero" className="text-xl font-semibold gradient-text">
-              &lt;DevName /&gt;
+              &lt;Yeshwant /&gt;
             </a>
-            <p className="text-gray-400 mt-1">Building the future, one line at a time.</p>
+            <p className="text-gray-400 mt-1">Transforming Data, Driving Innovation</p>
           </div>
           
           <div className="text-gray-400 text-sm">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Yeshwant Santhanakrishnan Premanand. All rights reserved.
           </div>
         </div>
       </div>

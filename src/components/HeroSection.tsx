@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Terminal } from "./Terminal";
 import { Link } from "react-scroll";
@@ -6,13 +5,13 @@ import { Link } from "react-scroll";
 export function HeroSection() {
   const commandsToType = [
     "const Developer = {",
-    "  name: 'Your Name',",
-    "  title: 'Software Engineer | Full Stack Developer',",
-    "  skills: ['React', 'TypeScript', 'Node.js', 'JavaScript'],",
-    "  passion: 'Building beautiful, intuitive interfaces'",
+    "  name: 'Yeshwant Santhanakrishnan Premanand',",
+    "  title: 'Data Science | AWS Cloud Practitioner | Scrum Master',",
+    "  skills: ['Python', 'AWS', 'Data Analysis', 'Machine Learning'],",
+    "  passion: 'Transforming data into actionable insights'",
     "};",
     "",
-    "// Let's create something amazing together",
+    "// Innovating with data-driven solutions",
     "render(<Portfolio developer={Developer} />);"
   ];
 
@@ -30,11 +29,11 @@ export function HeroSection() {
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold">
               <span className="gradient-text">Hello, I'm</span>
-              <span className="block text-white mt-2">Your Name</span>
+              <span className="block text-white mt-2">Yeshwant</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-300">Software Engineer & Full Stack Developer</h2>
+            <h2 className="text-2xl md:text-3xl text-gray-300">Data-Driven Innovator</h2>
             <p className="text-gray-400 max-w-md">
-              I build exceptional digital experiences with clean code and cutting-edge technology.
+              Certified AWS Cloud Practitioner and Scrum Master specializing in transformative data science solutions.
             </p>
             <div className="flex space-x-4 pt-4">
               <Link 
