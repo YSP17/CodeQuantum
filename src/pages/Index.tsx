@@ -1,8 +1,8 @@
-
 import React, { useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
+import { EducationSection } from "@/components/EducationSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -13,6 +13,7 @@ const Index = () => {
   const navItems = [
     { label: "Home", href: "hero" },
     { label: "About", href: "about" },
+    { label: "Education", href: "education" },
     { label: "Skills", href: "skills" },
     { label: "Projects", href: "projects" },
     { label: "Contact", href: "contact" },
@@ -128,6 +129,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <EducationSection />
         <SkillsSection />
         <ProjectsSection />
         <ContactSection />
