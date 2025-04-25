@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-scroll";
 
@@ -18,9 +19,10 @@ export function HeroSection() {
               <span className="gradient-text">Hello, I'm</span>
               <span className="block text-white mt-2">Yeshwant</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-300">Data Science Graduate & AWS Cloud Professional</h2>
+            <h2 className="text-2xl md:text-3xl text-gray-300">Data Science Graduate, AWS Cloud Practitioner, Scrum Master</h2>
             <p className="text-gray-400 max-w-md">
-              Based in Boston, MA. Certified AWS Cloud Practitioner and Scrum Master passionate about transforming data into actionable insights.
+              I specialize in designing intelligent, data-driven systems that turn information into impact.
+              From machine learning pipelines to cloud-native deployments, I build solutions that are scalable, reliable, and insight-focused.
             </p>
             <div className="flex space-x-4 pt-4">
               <Link 
@@ -47,13 +49,14 @@ export function HeroSection() {
             <pre className="text-gray-300 text-sm">
               {`const Yeshwant = {
   identity: 'Yeshwant Santhanakrishnan Premanand',
-  tags: ['Data Science Graduate', 'AWS Cloud Practitioner', 'Certified Scrum Master'],
+  profile: ['Analytics-driven', 'Cloud-ready', 'Agile-focused'],
   techStack: [
     'Data Engineering & Analytics',
     'Machine Learning & AI',
     'Visualization',
     'Databases & Cloud'
   ],
+  traits: ['Problem Solver', 'Collaborative Builder', 'Data-Driven Decision Maker'],
   goal: 'Decode data, deliver clarity.'
 };`}
             </pre>
