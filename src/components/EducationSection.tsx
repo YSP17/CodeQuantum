@@ -2,12 +2,11 @@
 import React from "react";
 import { AnimateOnScroll } from "./AnimateOnScroll";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { ChevronDown } from "lucide-react";
 
 export function EducationSection() {
   const mastersClasses = [
@@ -49,19 +48,23 @@ export function EducationSection() {
               <h3 className="text-2xl font-bold text-white mb-2">Rochester Institute of Technology (RIT)</h3>
               <p className="text-tech-blue font-semibold mb-1">Master of Science, Data Science</p>
               <p className="text-gray-400 mb-4">August 2022 - December 2024</p>
-              <p className="text-tech-purple font-semibold mb-2">CGPA: 3.97</p>
-              <Select>
-                <SelectTrigger className="w-full bg-background/50 border-tech-blue/30">
-                  <SelectValue placeholder="View Coursework" />
-                </SelectTrigger>
-                <SelectContent>
+              <p className="text-tech-purple font-semibold mb-4">CGPA: 3.97</p>
+              <Collapsible>
+                <CollapsibleTrigger className="flex items-center justify-between w-full p-3 bg-background/50 border border-tech-blue/30 rounded-md text-tech-blue hover:bg-tech-blue/10 transition-colors">
+                  View Coursework
+                  <ChevronDown className="h-4 w-4 transition-transform duration-200 [&[data-state=open]>svg]:rotate-180" />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="mt-2 space-y-2">
                   {mastersClasses.map((course, index) => (
-                    <SelectItem key={index} value={course}>
+                    <div
+                      key={index}
+                      className="p-2 bg-background/30 border border-tech-blue/20 rounded-md text-sm text-gray-300"
+                    >
                       {course}
-                    </SelectItem>
+                    </div>
                   ))}
-                </SelectContent>
-              </Select>
+                </CollapsibleContent>
+              </Collapsible>
             </div>
           </AnimateOnScroll>
 
@@ -71,19 +74,23 @@ export function EducationSection() {
               <h3 className="text-2xl font-bold text-white mb-2">Vellore Institute of Technology (VIT)</h3>
               <p className="text-tech-purple font-semibold mb-1">Bachelor of Technology, Electronics and Computer Engineering</p>
               <p className="text-gray-400 mb-4">August 2018 - May 2022</p>
-              <p className="text-tech-purple font-semibold mb-2">CGPA: 3.33</p>
-              <Select>
-                <SelectTrigger className="w-full bg-background/50 border-tech-purple/30">
-                  <SelectValue placeholder="View Coursework" />
-                </SelectTrigger>
-                <SelectContent>
+              <p className="text-tech-purple font-semibold mb-4">CGPA: 3.33</p>
+              <Collapsible>
+                <CollapsibleTrigger className="flex items-center justify-between w-full p-3 bg-background/50 border border-tech-purple/30 rounded-md text-tech-purple hover:bg-tech-purple/10 transition-colors">
+                  View Coursework
+                  <ChevronDown className="h-4 w-4 transition-transform duration-200 [&[data-state=open]>svg]:rotate-180" />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="mt-2 space-y-2">
                   {undergradClasses.map((course, index) => (
-                    <SelectItem key={index} value={course}>
+                    <div
+                      key={index}
+                      className="p-2 bg-background/30 border border-tech-purple/20 rounded-md text-sm text-gray-300"
+                    >
                       {course}
-                    </SelectItem>
+                    </div>
                   ))}
-                </SelectContent>
-              </Select>
+                </CollapsibleContent>
+              </Collapsible>
             </div>
           </AnimateOnScroll>
         </div>
