@@ -1,10 +1,18 @@
-
 import React from "react";
 import { ProjectCard } from "./ProjectCard";
 import { AnimateOnScroll } from "./AnimateOnScroll";
 
 export function ProjectsSection() {
   const projects = [
+    {
+      id: 0,
+      title: "Fake Job Posting Prediction",
+      description: "Developed a sophisticated SVM classifier using NLP techniques to analyze word polarity and semantic context within job postings. The model achieved a 30% improvement over baseline in detecting fraudulent listings using Python, pandas, and scikit-learn.",
+      tags: ["Python", "NLP", "Machine Learning", "SVM", "Scikit-learn", "Pandas"],
+      imageUrl: "https://images.unsplash.com/photo-1568598035424-7070b67317d1",
+      githubUrl: "#",
+      projectUrl: "#",
+    },
     {
       id: 1,
       title: "Data-Driven Analysis of Arrest Trends",
