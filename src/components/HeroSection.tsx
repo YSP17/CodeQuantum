@@ -1,20 +1,8 @@
+
 import React from "react";
-import { Terminal } from "./Terminal";
 import { Link } from "react-scroll";
 
 export function HeroSection() {
-  const commandsToType = [
-    "const Developer = {",
-    "  name: 'Yeshwant Santhanakrishnan Premanand',",
-    "  title: 'Data Science | AWS Cloud Practitioner | Scrum Master',",
-    "  skills: ['Python', 'AWS', 'Data Analysis', 'Machine Learning'],",
-    "  passion: 'Transforming data into actionable insights'",
-    "};",
-    "",
-    "// Innovating with data-driven solutions",
-    "render(<Portfolio developer={Developer} />);"
-  ];
-
   return (
     <section id="hero" className="min-h-screen relative flex items-center justify-center overflow-hidden">
       {/* Background with glowing effect */}
@@ -56,8 +44,15 @@ export function HeroSection() {
               </Link>
             </div>
           </div>
-          <div className="w-full max-w-md mx-auto">
-            <Terminal commands={commandsToType} typingSpeed={70} />
+          <div className="w-full max-w-md mx-auto bg-code/70 rounded-lg border border-white/10 p-4">
+            <pre className="text-gray-300 text-sm">
+              {`const Developer = {
+  name: 'Yeshwant Santhanakrishnan Premanand',
+  title: 'Data Science | AWS Cloud',
+  skills: ['Python', 'AWS', 'ML', 'Data Analysis'],
+  passion: 'Transforming data into insights'
+};`}
+            </pre>
           </div>
         </div>
       </div>
@@ -90,3 +85,4 @@ export function HeroSection() {
     </section>
   );
 }
+
