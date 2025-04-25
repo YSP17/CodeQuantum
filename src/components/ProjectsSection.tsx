@@ -7,28 +7,46 @@ export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Dashboard",
-      description: "A responsive admin dashboard for e-commerce platforms with real-time analytics and inventory management.",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-      imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      title: "Data-Driven Analysis of Arrest Trends",
+      description: "Applied advanced time series forecasting methods (LSTM, Prophet, TBATS, STL, SARIMAX) to analyze arrest trends. Conducted geospatial analysis to identify crime hotspots and examined demographic patterns across COVID-19 periods.",
+      tags: ["Python", "Pandas", "Scikit-learn", "Tableau", "Time Series", "Geospatial Analysis"],
+      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
       githubUrl: "#",
       projectUrl: "#",
     },
     {
       id: 2,
-      title: "Weather Forecast App",
-      description: "Modern weather application with detailed forecasts, interactive maps, and location-based services.",
-      tags: ["React", "Node.js", "API Integration", "Geolocation"],
-      imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      title: "Maternal Health Risk Prediction",
+      description: "Designed and deployed a serverless cloud-based predictive model using AWS services (S3, Glue, SageMaker, Lambda) to detect pregnancy complications. Implemented automated data processing and real-time visualization.",
+      tags: ["AWS", "Machine Learning", "Cloud Architecture", "Data Pipeline"],
+      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
       githubUrl: "#",
       projectUrl: "#",
     },
     {
       id: 3,
-      title: "Task Management System",
-      description: "Collaborative project management tool with task assignments, progress tracking, and team communication.",
-      tags: ["React", "Redux", "Firebase", "Material UI"],
-      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      title: "Tesla Market Analysis - India",
+      description: "Conducted market analysis using machine learning algorithms (K-Means, PCA) to simulate Tesla's pre-entry research into India. Achieved 90% accuracy in identifying target segments through predictive modeling.",
+      tags: ["Python", "Machine Learning", "Market Analysis", "Data Science"],
+      imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      githubUrl: "#",
+      projectUrl: "#",
+    },
+    {
+      id: 4,
+      title: "Tech Reseller Inventory Management",
+      description: "Developed a scalable database system using Oracle APEX for inventory management. Implemented real-time tracking, automated reordering, and predictive demand forecasting.",
+      tags: ["Oracle APEX", "SQL", "Database Design", "Supply Chain"],
+      imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      githubUrl: "#",
+      projectUrl: "#",
+    },
+    {
+      id: 5,
+      title: "Code Refactoring Predictor",
+      description: "Built an ML model using fastText and NLP techniques to predict code refactoring categories. Achieved 20% improvement in prediction accuracy through feature engineering and ensemble methods.",
+      tags: ["Python", "NLP", "Machine Learning", "Code Analysis"],
+      imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       githubUrl: "#",
       projectUrl: "#",
     },
@@ -41,7 +59,7 @@ export function ProjectsSection() {
           <h2 className="text-3xl font-bold gradient-text inline-block mb-4">Featured Projects</h2>
           <div className="h-1 w-20 bg-tech-blue mx-auto"></div>
           <p className="text-gray-400 max-w-2xl mx-auto mt-4">
-            A selection of my recent work. Each project showcases different skills and technologies.
+            A collection of my key projects showcasing expertise in data science, machine learning, and cloud technologies.
           </p>
         </div>
 
@@ -58,28 +76,6 @@ export function ProjectsSection() {
               />
             </AnimateOnScroll>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <a
-            href="#"
-            className="inline-flex items-center text-tech-blue hover:underline"
-          >
-            <span>View All Projects</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 ml-1"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
         </div>
       </div>
     </section>

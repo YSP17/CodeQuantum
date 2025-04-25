@@ -19,9 +19,9 @@ export function HeroSection() {
               <span className="gradient-text">Hello, I'm</span>
               <span className="block text-white mt-2">Yeshwant</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-300">Data-Driven Innovator</h2>
+            <h2 className="text-2xl md:text-3xl text-gray-300">Data Science Graduate & AWS Cloud Professional</h2>
             <p className="text-gray-400 max-w-md">
-              Certified AWS Cloud Practitioner and Scrum Master specializing in transformative data science solutions.
+              Certified AWS Cloud Practitioner and Scrum Master passionate about transforming data into actionable insights.
             </p>
             <div className="flex space-x-4 pt-4">
               <Link 
@@ -46,11 +46,16 @@ export function HeroSection() {
           </div>
           <div className="w-full max-w-md mx-auto bg-code/70 rounded-lg border border-white/10 p-4">
             <pre className="text-gray-300 text-sm">
-              {`const Developer = {
-  name: 'Yeshwant Santhanakrishnan Premanand',
-  title: 'Data Science | AWS Cloud',
-  skills: ['Python', 'AWS', 'ML', 'Data Analysis'],
-  passion: 'Transforming data into insights'
+              {`const Yeshwant = {
+  identity: 'Yeshwant Santhanakrishnan Premanand',
+  tags: ['Data Science Graduate', 'AWS Cloud Practitioner', 'Certified Scrum Master'],
+  techStack: [
+    'Data Engineering & Analytics',
+    'Machine Learning & AI',
+    'Visualization',
+    'Databases & Cloud'
+  ],
+  goal: 'Decode data, deliver clarity.'
 };`}
             </pre>
           </div>
@@ -85,4 +90,3 @@ export function HeroSection() {
     </section>
   );
 }
-
