@@ -4,17 +4,33 @@ import { AnimateOnScroll } from "./AnimateOnScroll";
 import { Award, Briefcase, Book } from "lucide-react";
 
 export function AboutSection() {
+  const certifications = [
+    "Advanced Terraform - LinkedIn Learning",
+    "Advanced BigQuery - LinkedIn Learning",
+    "Scrum Alliance Certified Scrum Master - Scrum Alliance",
+    "AWS Certified Cloud Practitioner - Amazon Web Services",
+    "Prompt Design in Vertex AI - Google",
+    "Generative AI Fundamentals – Databricks",
+    "Lakehouse Fundamentals – Databricks",
+    "Career Essentials in Generative AI – Microsoft and LinkedIn",
+    "DevOps Fundamentals – Vellore Institute of Technology",
+    "Introduction to Agile methodologies – Vellore Institute of Technology",
+    "Foundations of Supply Chain Management – Vellore Institute of Technology"
+  ];
+
   const experiences = [
     {
       title: "Executive Project Manager",
       company: "Community Dreams Foundation",
       period: "Mar 2025 - Present",
+      location: "Florida, US",
       description: "Leading AI-powered cloud-native platform development for the housing sector. Architecting microservices infrastructure and implementing ML models for real-time analytics.",
     },
     {
       title: "Marketing Analyst",
       company: "Proskill Learning LLP",
       period: "May 2020 - Mar 2022",
+      location: "Chennai, IND",
       description: "Conducted data-driven customer segmentation analysis, optimized marketing strategies, and improved data accessibility, leading to 30% increase in user engagement.",
     },
   ];
@@ -22,7 +38,7 @@ export function AboutSection() {
   const research = [
     {
       title: "Crack Detection by integrating image fusion techniques",
-      description: "Engineered an ML model for precise surface crack detection, achieving 14% improved accuracy over industry-standard algorithms.",
+      description: "Engineered an innovative machine learning model utilizing advanced computer vision techniques for the precise detection of surface cracks, achieving 14% improved accuracy over industry-standard algorithms.",
     },
     {
       title: "Adolescent behavior in family purchase decision",
@@ -39,26 +55,25 @@ export function AboutSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <AnimateOnScroll className="space-y-6" animation="fade-in">
+          <AnimateOnScroll className="space-y-6">
             <h3 className="text-2xl font-semibold text-white">Who I Am</h3>
             <p className="text-gray-300">
-              I'm a Data Science graduate and AWS Cloud Practitioner with a passion for transforming complex data into actionable insights. My expertise spans machine learning, cloud computing, and data engineering.
+              I'm a results-driven data science graduate with a passion for transforming data into intelligent, impactful solutions. With a strong foundation in data analytics, machine learning, and deep learning, I specialize in extracting insights from both structured and unstructured data.
+            </p>
+            <p className="text-gray-300">
+              My toolkit includes Python, SQL, TensorFlow, PyTorch, and Scikit-learn, and I have hands-on experience building, evaluating, and deploying models across cloud platforms like AWS (S3, SageMaker, Lambda), Google BigQuery, and Databricks. I'm also a certified AWS Cloud Practitioner and a Scrum Master, skilled in delivering cloud-native solutions through CI/CD pipelines and agile workflows.
+            </p>
+            <p className="text-gray-300">
+              From feature engineering and NLP to scalable AI model optimization, I'm driven by the challenge of solving real-world problems through data and innovation—with precision, clarity, and purpose.
             </p>
             
             <div className="pt-4">
-              <h3 className="text-xl font-semibold text-white mb-3">Core Technologies</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {[
-                  "Python",
-                  "AWS",
-                  "Machine Learning",
-                  "SQL",
-                  "Data Analysis",
-                  "Cloud Computing"
-                ].map((tech, index) => (
-                  <AnimateOnScroll key={tech} delay={index * 100}>
-                    <div className="glassmorphism rounded-md py-2 px-4 text-center text-gray-300">
-                      {tech}
+              <h3 className="text-xl font-semibold text-white mb-3">Certifications</h3>
+              <div className="space-y-2">
+                {certifications.map((cert, index) => (
+                  <AnimateOnScroll key={cert} delay={index * 100}>
+                    <div className="glassmorphism rounded-md py-2 px-4 text-gray-300">
+                      {cert}
                     </div>
                   </AnimateOnScroll>
                 ))}

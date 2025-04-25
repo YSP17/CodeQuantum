@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <a href="#hero" className="text-xl font-semibold gradient-text">
-              &lt;Yeshwant /&gt;
+              &lt;YSP17 /&gt;
             </a>
             <p className="text-gray-400 mt-1">Transforming Data, Driving Innovation</p>
           </div>

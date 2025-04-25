@@ -43,7 +43,7 @@ export function Navbar({ items, className }: NavbarProps) {
           href="#hero" 
           className="text-xl font-semibold gradient-text"
         >
-          &lt;DevName /&gt;
+          &lt;YSP17 /&gt;
         </a>
 
         {/* Desktop navigation */}

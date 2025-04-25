@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-scroll";
 
@@ -21,7 +20,7 @@ export function HeroSection() {
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-300">Data Science Graduate & AWS Cloud Professional</h2>
             <p className="text-gray-400 max-w-md">
-              Certified AWS Cloud Practitioner and Scrum Master passionate about transforming data into actionable insights.
+              Based in Boston, MA. Certified AWS Cloud Practitioner and Scrum Master passionate about transforming data into actionable insights.
             </p>
             <div className="flex space-x-4 pt-4">
               <Link 

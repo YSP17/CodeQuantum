@@ -15,7 +15,6 @@ export function ContactSection() {
 
         <div className="max-w-3xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Contact Info */}
             <div className="glassmorphism p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-white mb-4">Contact Information</h3>
               
@@ -54,7 +53,7 @@ export function ContactSection() {
                   </div>
                   <div className="ml-4">
                     <p className="text-sm text-gray-400">Location</p>
-                    <p className="text-white">Rochester, NY</p>
+                    <p className="text-white">Boston, MA</p>
                   </div>
                 </div>
               </div>
@@ -62,9 +61,8 @@ export function ContactSection() {
               <div className="mt-8">
                 <h4 className="text-white mb-3 font-medium">Connect With Me</h4>
                 <div className="flex space-x-4">
-                  {/* LinkedIn */}
                   <a 
-                    href="https://linkedin.com/in/yeshwantsp/" 
+                    href="https://www.linkedin.com/in/yeshwantsp/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-2 bg-tech-blue/20 rounded-full text-tech-blue hover:bg-tech-blue hover:text-white transition-colors"
@@ -75,7 +73,6 @@ export function ContactSection() {
               </div>
             </div>
             
-            {/* Contact Form */}
             <div className="glassmorphism p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-white mb-4">Send Message</h3>
               
