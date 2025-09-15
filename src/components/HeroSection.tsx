@@ -20,10 +20,6 @@ export function HeroSection() {
               <span className="block text-white mt-2">Yeshwant</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-300">Data Science Graduate, AWS Cloud Practitioner, Scrum Master</h2>
-            <p className="text-gray-400 max-w-md">
-              I specialize in designing intelligent, data-driven systems that turn information into impact.
-              From machine learning pipelines to cloud-native deployments, I build solutions that are scalable, reliable, and insight-focused.
-            </p>
             <div className="flex space-x-4 pt-4">
               <Link 
                 to="projects" 
@@ -45,21 +41,53 @@ export function HeroSection() {
               </Link>
             </div>
           </div>
-          <div className="w-full max-w-md mx-auto bg-code/70 rounded-lg border border-white/10 p-4">
-            <pre className="text-gray-300 text-sm">
-              {`const Yeshwant = {
-  identity: 'Yeshwant Santhanakrishnan Premanand',
-  profile: ['Analytics-driven', 'Cloud-ready', 'Agile-focused'],
-  techStack: [
-    'Data Engineering & Analytics',
-    'Machine Learning & AI',
-    'Visualization',
-    'Databases & Cloud'
-  ],
-  traits: ['Problem Solver', 'Collaborative Builder', 'Data-Driven Decision Maker'],
-  goal: 'Decode data, deliver clarity.'
-};`}
-            </pre>
+          <div className="space-y-6 md:space-y-8">
+            {/* Skills & Strengths Section */}
+            <div className="bg-code/30 rounded-lg border border-white/10 p-6">
+              <h3 className="text-xl font-semibold text-tech-blue mb-4">Strengths & Skills</h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-white font-medium mb-2">Strengths:</h4>
+                  <p className="text-gray-300 text-sm">Python, SQL, Machine Learning, Data Analytics & AWS</p>
+                </div>
+                
+                <div className="h-px bg-white/10"></div>
+                
+                <div>
+                  <h4 className="text-white font-medium mb-2">Other skills & tools:</h4>
+                  <p className="text-gray-300 text-sm">Java, C, R, Automated Systems, API Integration, Prompt Engineering, Database Design, Tableau</p>
+                </div>
+                
+                <div className="h-px bg-white/10"></div>
+                
+                <div>
+                  <h4 className="text-white font-medium mb-2">Certifications:</h4>
+                  <p className="text-gray-300 text-sm">AWS Certified Cloud Practitioner, Certified Scrum Master, Prompting Essentials – Google, Generative AI Fundamentals – Databricks</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Experience Section */}
+            <div className="bg-code/30 rounded-lg border border-white/10 p-6">
+              <h3 className="text-xl font-semibold text-tech-purple mb-4">Experience</h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-white font-medium mb-1">Community Dreams Foundation</h4>
+                  <p className="text-tech-blue text-sm mb-2">Role: Data Analyst</p>
+                  <p className="text-gray-300 text-sm">Built a system with a shopping cart, automated appointment scheduling system, and chatbot</p>
+                </div>
+                
+                <div className="h-px bg-white/10"></div>
+                
+                <div>
+                  <h4 className="text-white font-medium mb-1">RIT (collaboration with Rochester Police Department)</h4>
+                  <p className="text-tech-purple text-sm mb-2">Academic Project</p>
+                  <p className="text-gray-300 text-sm">Cleaned data, identified crime hotspots, did demographic analysis, studied racial and gender bias, and predicted future crime patterns</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
