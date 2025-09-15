@@ -13,7 +13,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="container mx-auto px-6 z-10">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold">
               <span className="gradient-text">Hello, I'm</span>
@@ -40,10 +40,9 @@ export function HeroSection() {
                 Contact Me
               </Link>
             </div>
-          </div>
-          <div className="space-y-6 md:space-y-8">
+            
             {/* Skills & Strengths Section */}
-            <div className="bg-code/30 rounded-lg border border-white/10 p-6">
+            <div className="bg-code/30 rounded-lg border border-white/10 p-6 mt-6">
               <h3 className="text-xl font-semibold text-tech-blue mb-4">Strengths & Skills</h3>
               
               <div className="space-y-4">
@@ -67,25 +66,25 @@ export function HeroSection() {
                 </div>
               </div>
             </div>
-
-            {/* Experience Section */}
-            <div className="bg-code/30 rounded-lg border border-white/10 p-6">
-              <h3 className="text-xl font-semibold text-tech-purple mb-4">Experience</h3>
+          </div>
+          
+          {/* Experience Section */}
+          <div className="bg-code/30 rounded-lg border border-white/10 p-6">
+            <h3 className="text-xl font-semibold text-tech-purple mb-4">Experience</h3>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="text-white font-medium mb-1">Community Dreams Foundation</h4>
+                <p className="text-tech-blue text-sm mb-2">Role: Data Analyst</p>
+                <p className="text-gray-300 text-sm">Built a system with a shopping cart, automated appointment scheduling system, and chatbot</p>
+              </div>
               
-              <div className="space-y-4">
-                <div>
-                  <h4 className="text-white font-medium mb-1">Community Dreams Foundation</h4>
-                  <p className="text-tech-blue text-sm mb-2">Role: Data Analyst</p>
-                  <p className="text-gray-300 text-sm">Built a system with a shopping cart, automated appointment scheduling system, and chatbot</p>
-                </div>
-                
-                <div className="h-px bg-white/10"></div>
-                
-                <div>
-                  <h4 className="text-white font-medium mb-1">RIT (collaboration with Rochester Police Department)</h4>
-                  <p className="text-tech-purple text-sm mb-2">Academic Project</p>
-                  <p className="text-gray-300 text-sm">Cleaned data, identified crime hotspots, did demographic analysis, studied racial and gender bias, and predicted future crime patterns</p>
-                </div>
+              <div className="h-px bg-white/10"></div>
+              
+              <div>
+                <h4 className="text-white font-medium mb-1">RIT (collaboration with Rochester Police Department)</h4>
+                <p className="text-tech-purple text-sm mb-2">Academic Project</p>
+                <p className="text-gray-300 text-sm">Cleaned data, identified crime hotspots, did demographic analysis, studied racial and gender bias, and predicted future crime patterns</p>
               </div>
             </div>
           </div>
