@@ -80,15 +80,15 @@ export function HeroSection() {
               <div>
                 <h4 className="text-white font-medium mb-1">Community Dreams Foundation</h4>
                 <p className="text-tech-blue text-sm mb-2">Role: Data Analyst</p>
-                <p className="text-gray-300 text-sm">Built a system with a shopping cart, automated appointment scheduling system, and chatbot</p>
+                <p className="text-gray-300 text-sm">Responsibilities: Built a system with a shopping cart, automated appointment scheduling system, and chatbot</p>
               </div>
               
               <div className="h-px bg-white/10"></div>
               
               <div>
                 <h4 className="text-white font-medium mb-1">RIT (collaboration with Rochester Police Department)</h4>
-                <p className="text-tech-purple text-sm mb-2">Academic Project</p>
-                <p className="text-gray-300 text-sm">Cleaned data, identified crime hotspots, did demographic analysis, studied racial and gender bias, and predicted future crime patterns</p>
+                <p className="text-tech-purple text-sm mb-2">Academic</p>
+                <p className="text-gray-300 text-sm">Responsibilities: Cleaned data, identified crime hotspots, did demographic analysis, studied racial and gender bias, and predicted future crime patterns</p>
               </div>
             </div>
           </div>

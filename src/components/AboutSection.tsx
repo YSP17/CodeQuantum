@@ -5,33 +5,31 @@ import { Award, Briefcase, Book } from "lucide-react";
 
 export function AboutSection() {
   const certifications = [
+    "AWS Certified Cloud Practitioner - Amazon Web Services",
+    "Scrum Alliance Certified Scrum Master - Scrum Alliance",
     "Advanced Terraform - LinkedIn Learning",
     "Advanced BigQuery - LinkedIn Learning",
-    "Scrum Alliance Certified Scrum Master - Scrum Alliance",
-    "AWS Certified Cloud Practitioner - Amazon Web Services",
     "Prompt Design in Vertex AI - Google",
+    "Prompting Essentials – Google",
     "Generative AI Fundamentals – Databricks",
     "Lakehouse Fundamentals – Databricks",
-    "Career Essentials in Generative AI – Microsoft and LinkedIn",
-    "DevOps Fundamentals – Vellore Institute of Technology",
-    "Introduction to Agile methodologies – Vellore Institute of Technology",
-    "Foundations of Supply Chain Management – Vellore Institute of Technology"
+    "Career Essentials in Generative AI – Microsoft and LinkedIn"
   ];
 
   const experiences = [
     {
-      title: "Executive Project Manager",
+      title: "Data Analyst",
       company: "Community Dreams Foundation",
       period: "Mar 2025 - Present",
       location: "Florida, US",
-      description: "Leading AI-powered cloud-native platform development for the housing sector. Architecting microservices infrastructure and implementing ML models for real-time analytics.",
+      description: "Responsibilities: Leading AI-powered cloud-native platform development for the housing sector. Architecting microservices infrastructure and implementing ML models for real-time analytics.",
     },
     {
       title: "Marketing Analyst",
       company: "Proskill Learning LLP",
       period: "May 2020 - Mar 2022",
       location: "Chennai, IND",
-      description: "Conducted data-driven customer segmentation analysis, optimized marketing strategies, and improved data accessibility, leading to 30% increase in user engagement.",
+      description: "Responsibilities: Conducted data-driven customer segmentation analysis, optimized marketing strategies, and improved data accessibility, leading to 30% increase in user engagement.",
     },
   ];
 
@@ -58,13 +56,13 @@ export function AboutSection() {
           <AnimateOnScroll className="space-y-6">
             <h3 className="text-2xl font-semibold text-white">Who I Am</h3>
             <p className="text-gray-300">
-              I'm a results-driven data science graduate with a passion for transforming data into intelligent, impactful solutions. With a strong foundation in data analytics, machine learning, and deep learning, I specialize in extracting insights from both structured and unstructured data.
+              I'm a Data Science graduate who genuinely loves digging into data and turning it into something useful. Whether it's building machine learning models, cleaning messy datasets, or deploying solutions on the cloud, I enjoy the entire process of shaping raw information into clear insights that actually make a difference.
             </p>
             <p className="text-gray-300">
-              My toolkit includes Python, SQL, TensorFlow, PyTorch, and Scikit-learn, and I have hands-on experience building, evaluating, and deploying models across cloud platforms like AWS (S3, SageMaker, Lambda), Google BigQuery, and Databricks. I'm also a certified AWS Cloud Practitioner and a Scrum Master, skilled in delivering cloud-native solutions through CI/CD pipelines and agile workflows.
+              Most days you'll find me working with Python, SQL, TensorFlow, PyTorch, and Scikit-learn, and I've had hands-on experience getting models live on AWS, Google BigQuery, and Databricks. Along the way, I became an AWS Certified Cloud Practitioner and a Certified Scrum Master, which means I know how to balance technical depth with agile, practical delivery.
             </p>
             <p className="text-gray-300">
-              From feature engineering and NLP to scalable AI model optimization, I'm driven by the challenge of solving real-world problems through data and innovation—with precision, clarity, and purpose.
+              What excites me most is the blend of AI and analytics — whether it's designing smarter prompts, scaling machine learning workflows, or automating systems end-to-end. I enjoy working with small, cross-functional teams, where I can be hands-on, solve problems fast, and make data come alive in ways that are both impactful and fun.
             </p>
             
             <div className="pt-4">
@@ -85,7 +83,7 @@ export function AboutSection() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Briefcase className="text-tech-blue" />
-                <h3 className="text-xl font-semibold text-white">Experience</h3>
+                <h3 className="text-xl font-semibold text-white">Work Experience</h3>
               </div>
               <div className="space-y-4">
                 {experiences.map((exp, index) => (
