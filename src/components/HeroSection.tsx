@@ -52,14 +52,14 @@ export function HeroSection() {
             
             <div className="space-y-4">
               <div>
-                <h4 className="text-white font-medium mb-2">Strengths:</h4>
+                <h4 className="text-white font-medium mb-2">Primary Expertise:</h4>
                 <p className="text-gray-300 text-sm">Python, SQL, Machine Learning, Data Analytics & AWS</p>
               </div>
               
               <div className="h-px bg-white/10"></div>
               
               <div>
-                <h4 className="text-white font-medium mb-2">Other skills & tools:</h4>
+                <h4 className="text-white font-medium mb-2">Technical Toolkit:</h4>
                 <p className="text-gray-300 text-sm">Java, C, R, Automated Systems, API Integration, Prompt Engineering, Database Design, Tableau</p>
               </div>
               
