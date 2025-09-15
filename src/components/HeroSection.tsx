@@ -13,7 +13,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="container mx-auto px-6 z-10">
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold">
               <span className="gradient-text">Hello, I'm</span>
@@ -40,30 +40,34 @@ export function HeroSection() {
                 Contact Me
               </Link>
             </div>
+          </div>
+          <div></div>
+        </div>
+
+        {/* Skills & Experience Section */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Skills & Strengths Section */}
+          <div className="bg-code/30 rounded-lg border border-white/10 p-6">
+            <h3 className="text-xl font-semibold text-tech-blue mb-4">Strengths & Skills</h3>
             
-            {/* Skills & Strengths Section */}
-            <div className="bg-code/30 rounded-lg border border-white/10 p-6 mt-6">
-              <h3 className="text-xl font-semibold text-tech-blue mb-4">Strengths & Skills</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="text-white font-medium mb-2">Strengths:</h4>
+                <p className="text-gray-300 text-sm">Python, SQL, Machine Learning, Data Analytics & AWS</p>
+              </div>
               
-              <div className="space-y-4">
-                <div>
-                  <h4 className="text-white font-medium mb-2">Strengths:</h4>
-                  <p className="text-gray-300 text-sm">Python, SQL, Machine Learning, Data Analytics & AWS</p>
-                </div>
-                
-                <div className="h-px bg-white/10"></div>
-                
-                <div>
-                  <h4 className="text-white font-medium mb-2">Other skills & tools:</h4>
-                  <p className="text-gray-300 text-sm">Java, C, R, Automated Systems, API Integration, Prompt Engineering, Database Design, Tableau</p>
-                </div>
-                
-                <div className="h-px bg-white/10"></div>
-                
-                <div>
-                  <h4 className="text-white font-medium mb-2">Certifications:</h4>
-                  <p className="text-gray-300 text-sm">AWS Certified Cloud Practitioner, Certified Scrum Master, Prompting Essentials – Google, Generative AI Fundamentals – Databricks</p>
-                </div>
+              <div className="h-px bg-white/10"></div>
+              
+              <div>
+                <h4 className="text-white font-medium mb-2">Other skills & tools:</h4>
+                <p className="text-gray-300 text-sm">Java, C, R, Automated Systems, API Integration, Prompt Engineering, Database Design, Tableau</p>
+              </div>
+              
+              <div className="h-px bg-white/10"></div>
+              
+              <div>
+                <h4 className="text-white font-medium mb-2">Certifications:</h4>
+                <p className="text-gray-300 text-sm">AWS Certified Cloud Practitioner, Certified Scrum Master, Prompting Essentials – Google, Generative AI Fundamentals – Databricks</p>
               </div>
             </div>
           </div>
