@@ -15,7 +15,7 @@ export function HeroSection() {
       <div className="container mx-auto px-6 z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold">
+            <h1 className="text-4xl md:text-6xl font-bold mt-8">
               <span className="gradient-text">Hello, I'm</span>
               <span className="block text-white mt-2">Yeshwant</span>
             </h1>
