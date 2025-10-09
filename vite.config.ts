@@ -6,10 +6,11 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)), // 👈 correct syntax
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: '/CodeQuantum/',
+  base: '/CodeQuantum/', // 👈 must match your repo name exactly
 })
+
 
 
