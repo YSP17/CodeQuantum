@@ -29,11 +29,11 @@ export function SkillsSection() {
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-in" delay={300}>
-            <SkillCard title="Data Visualization" description="Skilled in creating compelling visualizations that communicate complex data insights effectively." />
+            <SkillCard title="Data Visualization" description="Skilled in creating compelling visualizations using Tableau and Power BI that communicate complex data insights effectively." />
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-in">
-            <SkillCard title="Programming Languages" description="Proficient in Python, SQL, and JavaScript, enabling versatile development capabilities." />
+            <SkillCard title="Programming Languages" description="Proficient in Python, SQL, Java, C, and R, enabling versatile development capabilities." />
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-in" delay={100}>
@@ -46,6 +46,10 @@ export function SkillsSection() {
 
           <AnimateOnScroll animation="fade-in" delay={300}>
             <SkillCard title="Big Data Technologies" description="Knowledge of big data tools like Spark and Hadoop for processing large datasets." />
+          </AnimateOnScroll>
+
+          <AnimateOnScroll animation="fade-in">
+            <SkillCard title="Prompt Engineering" description="Expertise in crafting effective prompts for AI models to optimize performance and achieve desired outcomes." />
           </AnimateOnScroll>
         </div>
       </div>
