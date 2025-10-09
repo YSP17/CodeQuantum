@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
+import react from '@vitejs/plugin-react-swc'   // <-- use -swc
 export default defineConfig({
   plugins: [react()],
-  base: '/CodeQuantum/' // must match your repo name exactly
+  base: '/CodeQuantum/'                        // <-- repo name
 })
+
 
